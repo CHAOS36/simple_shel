@@ -10,8 +10,9 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <string.h>
-#include <errno.h>
+
 #define DELIMT " \t\n"
+
 char *read_line(void);
 int _strcmp(char *s1, char *s2);
 char *_strdup(char *str);
@@ -19,5 +20,5 @@ char *_strcpy(char *dest, char *src);
 int _strlen(const char *s);
 char *_strcat(char *dest, const char *src);
 
-
 #endif
+

@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * main - Entry point
  *
@@ -9,22 +10,22 @@
  */
 int main(int ac, char **av)
 {
-	char *line =  NULL, **command = NULL;
+	char *line = NULL, **command = NULL;
 	int statut = 0;
-	(void) ac;
-	(void) av;
-
+	(void)ac;
+	(void)av;
 	while (1)
 	{
 		line = read_line();
-		if (line == NULL)/* reache EOF ctr + D */
+		if (line == NULL) /* reach EOF ctrl + D */
 		{
 			if (isatty(STDIN_FILENO))
 				write(STDOUT_FILENO, "\n", 1);
-			return (status);
+			return (statut);
 		}
 		command = tokenizer(line);
 
-		/*status = _execute(command, av);*/
+		/* status = _execute(command, av); */
 	}
 }
+
