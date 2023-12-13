@@ -25,7 +25,7 @@ int main(int ac, char **av)
 		}
 		command = tokenizer(line);
 
-		/* status = _execute(command, av); */
+		statut = _execute(command, av);
 	}
 }
 

@@ -12,7 +12,8 @@
 #include <string.h>
 
 #define DELIMT " \t\n"
-
+char **tokenizer(char *line);
+int _execute(char **command, char **av);
 char *read_line(void);
 int _strcmp(char *s1, char *s2);
 char *_strdup(char *str);

@@ -1,18 +1,23 @@
 #include "shell.h"
+#include <stdio.h>
 
-int main()
+int main(void)
 {
-    char *str;
-    char *token;
+	char *str;
+	char *token;
 
-    str = _strdup("this         is\t           morocco\n");
+	str = _strdup("this         is\t           morocco\n");
 
-    token = strtok(str, " \t\n");
+	token = strtok(str, " \t\n");
 
-    while (token != NULL) {
-        printf("%s\n", token);
-        token = strtok(NULL, " \t\n");
-    }
-    return 0;
+	while (token != NULL) 
+	{
+		printf("%s\n", token);
+		token = strtok(NULL, " \t\n");
+	}
+
+	free(str);
+
+	return (0);
 }
 
